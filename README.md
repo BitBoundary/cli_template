@@ -6,7 +6,9 @@ Cleanly organized template for a command-line Python script
 
 ```bash
 $ python main.py -h
-usage: main.py [-h] [--files [FILES ...]] [--required-files REQUIRED_FILES [REQUIRED_FILES ...]] [-v] [-m {auto,manual}] [-s SIZE] source [optional_destination]
+usage: main.py [-h] [--files [FILES ...]] \
+  [--required-files REQUIRED_FILES [REQUIRED_FILES ...]] \
+  [-v] [-m {auto,manual}] [-s SIZE] source [optional_destination]
 
 Template demonstrating common argparse features.
 
@@ -33,7 +35,9 @@ options:
 $ python validators.py -h
 usage: validators.py [-h] source_directory files [files ...]
 
-Template demonstrating various argparse features. Run with -h or --help to see all options.
+Template demonstrating various argparse features.
+
+Run with -h or --help to see all options.
 
 positional arguments:
   source_directory  This directory will be scanned recursively

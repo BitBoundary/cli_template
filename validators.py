@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
 Template demonstrating various argparse features.
+
 Run with -h or --help to see all options.
 """
 import argparse
@@ -30,7 +31,10 @@ def directory(path: str) -> pathlib.Path:
 
 
 def setup_parser():
-    parser = argparse.ArgumentParser(description=__doc__)
+    parser = argparse.ArgumentParser(
+        description=__doc__,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
 
 
 
